@@ -193,7 +193,8 @@ img {
 /*===== HOME =====*/
 .home {
     position: relative;
-    row-gap: 5rem;
+/*     row-gap: 5rem; */
+     row-gap: 3rem;
     padding: 2rem 0 5rem;
 }
 
