@@ -622,7 +622,7 @@ img {
         width: 100%;
         height: 0.18rem;
         left: 0;
-        top: 2rem;
+        top: 1.5rem;
         background-color: white;
     }
     .active::after {
@@ -631,7 +631,7 @@ img {
         width: 100%;
         height: 0.18rem;
         left: 0;
-        top: 2rem;
+        top: 1.5rem;
         background-color: white;
     }
 }
