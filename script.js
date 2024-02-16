@@ -43,8 +43,14 @@ const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
+  menuIcon = document.querySelector(".nav__toggle i");
+  
   // When we click on each nav__link, we remove the show-menu class
   navMenu.classList.remove("show");
+  if (menuIcon.classList.contains("bx-menu-alt-right")) {
+    menuIcon.classList.remove("bx-menu-alt-right");
+    menuIcon.classList.add("bx-menu");
+  }
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
