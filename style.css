@@ -615,6 +615,25 @@ img {
         /* margin: 0 10px; */
         transition: color .3s;
     }
+
+      .nav__link:hover::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 0.18rem;
+        left: 0;
+        top: 2rem;
+        background-color: white;
+    }
+    .active::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 0.18rem;
+        left: 0;
+        top: 2rem;
+        background-color: white;
+    }
 }
 
 
