@@ -73,6 +73,13 @@ img {
     display: block;
 }
 
+/* Dark mode styles */
+.dark-mode {
+    background-color: #1e1e1e; /* Dark background color */
+    color: #fff; /* Light text color */
+  }
+
+
 /*===== CLASS CSS ===== */
 .section-title {
     position: relative;
