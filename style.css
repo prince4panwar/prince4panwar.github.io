@@ -168,6 +168,12 @@ img {
     color: var(--second-color);
 }
 
+.bulb-icon{
+    font-size: 2rem;
+    color: #f1c40f;
+    cursor: pointer;
+}
+
 .nav__toggle {
     color: var(--second-color);
     font-size: 1.5rem;
