@@ -238,7 +238,8 @@ img {
     margin-bottom: var(--mb-2);
     font-size: 2rem;
     /* color: var(--second-color); */
-    color: #304D30;
+/*     color: #304D30; */
+    color: var(--tshirt-color);
 }
 
 .home__social-icon:hover {
