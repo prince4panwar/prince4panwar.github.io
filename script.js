@@ -98,3 +98,33 @@ sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 //   var element = document.body;
 //   element.classList.toggle("dark-mode");
 // }
+
+
+/*===== LIGHT AND DARK MODE =====*/
+const bulbIcon = document.querySelector(".bulb-icon i");
+
+function toggleDarkMode() {
+  const element = document.body;
+  element.classList.toggle("dark-mode");
+
+  // Toggle between sun and moon icons
+  if (bulbIcon.classList.contains("bx-sun")) {
+    bulbIcon.classList.remove("bx-sun");
+    bulbIcon.classList.add("bx-moon");
+  } else {
+    bulbIcon.classList.remove("bx-moon");
+    bulbIcon.classList.add("bx-sun");
+  }
+
+  // Change icon color based on dark mode
+  if (element.classList.contains("dark-mode")) {
+    // bulbIcon.style.color = "#f1c40f"; // Yellow color for moon icon
+    bulbIcon.style.color = "#000000"; // Yellow color for moon icon
+  } else {
+    // bulbIcon.style.color = "#ffeb3b"; // Yellow color for sun icon
+    bulbIcon.style.color = "#f1c40f"; // Yellow color for sun icon
+  }
+}
+
+// Add event listener to the bulb icon
+bulbIcon.addEventListener("click", toggleDarkMode);
