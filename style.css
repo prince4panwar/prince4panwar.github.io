@@ -423,7 +423,7 @@ img {
 }
 
 .footer__social {
-    margin-bottom: var(--mb-4);
+/*     margin-bottom: var(--mb-4); */
 }
 
 .footer__icon {
