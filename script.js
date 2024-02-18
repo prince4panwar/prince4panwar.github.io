@@ -126,6 +126,11 @@ function toggleDarkMode() {
   if (element.classList.contains("dark-mode")) {
     // bulbIcon.style.color = "#f1c40f"; 
     bulbIcon.style.color = "#f1c40f";
+    homeSocialIcon.forEach((n) => (n.style.color = "white"));
+    skill.forEach((n) => (n.style.border = "1px solid white"));
+    about.style.border = "1px solid white";
+    about.style.borderRadius = "5px";
+    work.forEach((n) => (n.style.border = "1px solid white"));
   } else {
     // bulbIcon.style.color = "#ffeb3b"; 
     bulbIcon.style.color = "#000000"; 
