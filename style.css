@@ -179,9 +179,11 @@ img {
 
 .bulb-icon{
     font-size: 2rem;
-    color: #f1c40f;
+    color: #000000;
     cursor: pointer;
+    
 }
+
 
 .nav__toggle {
     color: var(--second-color);
