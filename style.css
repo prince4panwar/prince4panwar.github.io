@@ -184,6 +184,11 @@ img {
     
 }
 
+.bulb-icon .bx:hover{
+    background-color: #d8e1fe;
+    border-radius: 50%;
+    padding: 4px;
+}
 
 .nav__toggle {
     color: var(--second-color);
