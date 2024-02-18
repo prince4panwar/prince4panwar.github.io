@@ -103,6 +103,11 @@ sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 
 /*===== LIGHT AND DARK MODE =====*/
 const bulbIcon = document.querySelector(".bulb-icon i");
+const homeSocialIcon = document.querySelectorAll(".home__social-icon");
+const skill = document.querySelectorAll(".skill-image");
+const about = document.querySelector(".about__img");
+const work = document.querySelectorAll(".work__img");
+
 
 function toggleDarkMode() {
   const element = document.body;
