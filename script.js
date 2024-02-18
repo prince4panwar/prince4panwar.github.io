@@ -134,6 +134,7 @@ function toggleDarkMode() {
   } else {
     // bulbIcon.style.color = "#ffeb3b"; 
     bulbIcon.style.color = "#000000"; 
+    homeSocialIcon.forEach((n) => (n.style.color = "var(--tshirt-color)"));
     // #edeff6
   }
 }
