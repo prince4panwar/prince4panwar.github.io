@@ -108,6 +108,7 @@ const homeSocialIcon = document.querySelectorAll(".home__social-icon");
 const skill = document.querySelectorAll(".skill-image");
 const about = document.querySelector(".about__img");
 const work = document.querySelectorAll(".work__img");
+const buttons = document.querySelectorAll(".button");
 
 // const input = document.querySelectorAll("input");
 
@@ -129,6 +130,16 @@ function toggleDarkMode() {
     // bulbIcon.style.color = "#f1c40f"; // Yellow color for moon icon
     bulbIcon.style.color = "#f1c40f"; // Yellow color for moon icon
     homeSocialIcon.forEach((n) => (n.style.color = "white"));
+    
+      buttons.forEach((button) => {
+      button.addEventListener("mouseenter", () => {
+        button.style.backgroundColor = "var(--first-color)";
+      });
+      button.addEventListener("mouseleave", () => {
+        button.style.backgroundColor = "var(--tshirt-color)";
+      });
+    });
+    
     skill.forEach((n) => (n.style.border = "1px solid white"));
     about.style.border = "1px solid white";
     about.style.borderRadius = "5px";
