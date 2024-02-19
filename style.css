@@ -253,6 +253,10 @@ img {
     color: var(--first-color);
 }
 
+.home__social-icon i{
+    transition: transform ease-in-out 0.3s, color ease-in-out 0.3s;
+}
+
 .home__img {
     position: absolute;
     right: 0;
