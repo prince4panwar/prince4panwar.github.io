@@ -102,12 +102,14 @@ sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 
 
 /*===== LIGHT AND DARK MODE =====*/
+// Add this JavaScript code to your existing script.js file or within <script> tags in your HTML file
 const bulbIcon = document.querySelector(".bulb-icon i");
 const homeSocialIcon = document.querySelectorAll(".home__social-icon");
 const skill = document.querySelectorAll(".skill-image");
 const about = document.querySelector(".about__img");
 const work = document.querySelectorAll(".work__img");
 
+// const input = document.querySelectorAll("input");
 
 function toggleDarkMode() {
   const element = document.body;
@@ -122,23 +124,47 @@ function toggleDarkMode() {
     bulbIcon.classList.add("bx-moon");
   }
 
- 
+  // Change icon color based on dark mode
   if (element.classList.contains("dark-mode")) {
-    // bulbIcon.style.color = "#f1c40f"; 
-    bulbIcon.style.color = "#f1c40f";
+    // bulbIcon.style.color = "#f1c40f"; // Yellow color for moon icon
+    bulbIcon.style.color = "#f1c40f"; // Yellow color for moon icon
     homeSocialIcon.forEach((n) => (n.style.color = "white"));
     skill.forEach((n) => (n.style.border = "1px solid white"));
     about.style.border = "1px solid white";
     about.style.borderRadius = "5px";
     work.forEach((n) => (n.style.border = "1px solid white"));
+
+    homeSocialIcon.forEach((icon) => {
+      // Add mouseenter event listener
+      icon.addEventListener("mouseenter", () => {
+        icon.style.color = "var(--first-color)";
+      });
+      // Add mouseleave event listener
+      icon.addEventListener("mouseleave", () => {
+        icon.style.color = "white";
+      });
+    });
+
+    // input.forEach((n) => (n.style.border = "1px solid blue"));
+    // skill.style.border = "2px solid white";
   } else {
-    // bulbIcon.style.color = "#ffeb3b"; 
-    bulbIcon.style.color = "#000000"; 
+    // bulbIcon.style.color = "#ffeb3b"; // Yellow color for sun icon
+    bulbIcon.style.color = "#000000"; // Yellow color for sun icon
     homeSocialIcon.forEach((n) => (n.style.color = "var(--tshirt-color)"));
     // #edeff6
+
+    homeSocialIcon.forEach((icon) => {
+      // Add mouseenter event listener
+      icon.addEventListener("mouseenter", () => {
+        icon.style.color = "var(--first-color)";
+      });
+      // Add mouseleave event listener
+      icon.addEventListener("mouseleave", () => {
+        icon.style.color = "var(--tshirt-color)";
+      });
+    });
   }
 }
 
 // Add event listener to the bulb icon
 bulbIcon.addEventListener("click", toggleDarkMode);
-
