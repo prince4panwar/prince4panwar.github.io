@@ -656,6 +656,13 @@ img {
         /* max-width: 60%; */
         padding: 5px 0;
     }
+       .work__img img {
+        filter: blur(0px);
+    }
+    
+    .work__img img:hover {
+        transform: scale(1.1);
+    }
     
     .footer {
         display: flex;
