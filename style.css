@@ -184,10 +184,14 @@ img {
     
 }
 
-.bulb-icon .bx:hover{
-    background-color: #d8e1fe;
+.bulb-icon .bx{
+    background-color: #d8e1fe80;
     border-radius: 50%;
     padding: 4px;
+    transition: background-color 0.2s ease;
+}
+.bulb-icon .bx:hover{
+    background-color: #d8e1fe;
 }
 
 .nav__toggle {
