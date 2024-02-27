@@ -382,12 +382,23 @@ img {
     overflow: hidden;
 }
 
-.work__img img {
+/* .work__img img {
     transition: 1s;
 }
 
 .work__img img:hover {
     transform: scale(1.5);
+} */
+
+.work__img img {
+    filter: blur(3px);
+    transition: .4s;
+}
+
+.work__img img:hover {
+    transform: scale(1.1);
+    filter: blur(0px);
+    
 }
 
 /* ===== CONTACT =====*/
