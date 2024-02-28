@@ -395,14 +395,13 @@ p.about__text {
 } */
 
 .work__img img {
-    filter: blur(3px);
+    filter: blur(2px);
     transition: .4s;
 }
 
 .work__img img:hover {
-    transform: scale(1.1);
-    filter: blur(0px);
-    
+    transform: scale(1.07);
+    filter: blur(0px); 
 }
 
 /* ===== CONTACT =====*/
