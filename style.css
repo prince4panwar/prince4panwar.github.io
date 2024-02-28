@@ -572,7 +572,8 @@ p.about__text {
         padding-top: 2rem;
     }
     .about__img img {
-        width: 300px;
+/*         width: 300px; */
+        width: 305px;
         transition: transform ease-in-out 0.3s;
     }
     .about__img img:hover{
