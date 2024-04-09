@@ -253,6 +253,21 @@
 
     <!--===== MAIN JS =====-->
     <script src="script.js"></script>
+
+     <script>
+        document.getElementById("downloadButton").addEventListener("click", function () {
+            // Replace 'resume.pdf' with the path to your resume file
+            var resumeUrl = 'public/resumeprince.pdf';
+
+            // Creating a hidden anchor element to trigger download
+            var a = document.createElement('a');
+            a.href = resumeUrl;
+            a.download = 'Resume.pdf'; // You can customize the downloaded file name here
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+    </script>
 </body>
 
 </html>
